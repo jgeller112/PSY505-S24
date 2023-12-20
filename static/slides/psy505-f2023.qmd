@@ -1,0 +1,70 @@
+---
+title: "Welcome to PSY505!"
+subtitle: "Princeton University"
+author: "Jason Geller, PH(Pronouns: He/him)"
+date: 'Updated:`r Sys.Date()`'
+footer: "PSY 505: Current Issues in Statistical Methods and Research Practices for Psychological Science"
+format: 
+  revealjs:
+    theme: psy504.css
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+execute:
+  freeze: auto
+  echo: false
+  message: false
+  warning: false
+  fig-align: "center"
+  fig-width: 12
+  fig-height: 8
+editor_options: 
+  chunk_output_type: inline
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Class Format
+
+-   **Guest Seminars.** Students will attend a series of lectures during
+    the semester. Lectures may introduce a recent methodological
+    contribution or discuss a controversial and easily overlooked issue
+    regarding the application or interpretation of statistics. Lectures
+    will be given by guest speakers who are expert in the topic.
+
+**Tutorials.** Students will learn skills to build reproducible and
+transparent research programs. These tutorials may teach students how to
+preregister their studies, run power analyses, and organize their code
+with Notebooks). Tutorials may be given by guest speakers who are expert
+in the topic.
+
+## Class Format
+
+-   No homework🚫
+
+-   No tests🚫
+
+-   Free lunch!✅
+
+## Past Speakers
+
+-   Daniël Lakens
+
+-   Erin Buchanan
+
+-   Ulrich Schimmack
+
+-   Patrick Curran
+
+-   Paul Bürkner
+
+-   Daniel S. Quintana
+
+-   Jaclyn Siegel
+
+## This semester
+
+<https://psy505-fall2023.netlify.app/schedule.html>
