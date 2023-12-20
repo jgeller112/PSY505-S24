@@ -1,0 +1,36 @@
+---
+title: "Schedule"
+sidebar: false
+toc: false
+page-layout: full
+---
+
+```{r packages-data, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+Here's your roadmap for the semester!
+
+<ul class="icon-list">
+
+<li><i class="fas fa-book-reader"></i> Readings should be completed ***before*** each class session</li>
+
+<li><i class="fas fa-tv"></i> Slides and other class materials will be added on the day of class</li>
+
+| Week  | Day  | Speaker | Workshop/Talk |
+|---|---|---|---|
+| 1 | 1/30/24 | No Speaker |  |
+| 2 | 2/6/24 | Sakshi Ghai, University of Cambrige |  |
+| 3 | 2/13/24 | No Speaker |  |
+| 4 | 2/20/24 | Joseph Casillas, Rutgers Univeristy |  |
+| 5 | 2/27/24 | No Speaker |  |
+| 6 | 3/5/24 | Julia Rohrer, Leipzig University |  |
+| 7 | 3/12/24 | No Speaker |  |
+| 8 | 3/19/24 | Gregory Hancock, University of Maryland |  |
+| 9 | 3/26/24 | Kou Murayama, University of Tubingen |  |
+| 10 | 4/2/24 | Jessica Kay Flake, McGill Univeristy |  |
+| 11 | 4/9/24 | Lisa DeBruine, University of Glasgow  |  |
+| 12 | 4/16/24 | No Speaker |  |
+| 13 | 4/23/24 | No Speaker |  |
