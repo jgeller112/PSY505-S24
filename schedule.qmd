@@ -22,15 +22,15 @@ Here's your roadmap for the semester!
 | Week  | Day  | Speaker | Workshop/Talk |
 |---|---|---|---|
 | 1 | 1/30/24 | No Speaker |  |
-| 2 | 2/6/24 | Sakshi Ghai, University of Cambrige |  |
+| 2 | 2/6/24 | [Sakshi Ghai, University of Cambrige](/speakers/01-week-speaker.qmd) |  [{{< fa video   >}}](https://drive.google.com/file/d/17TdjrDG1Ws3Pce4O9t8NSPeNSurGpryV/view?usp=drive_link)|
 | 3 | 2/13/24 | No Speaker |  |
-| 4 | 2/20/24 | Joseph Casillas, Rutgers Univeristy |  |
+| 4 | 2/20/24 | Joseph Casillas, Rutgers Univeristy (Rescheduled Fall 2024) |  |
 | 5 | 2/27/24 | No Speaker |  |
-| 6 | 3/5/24 | Julia Rohrer, Leipzig University |  |
+| 6 | 3/5/24 | [Julia Rohrer, Leipzig University](/speakers/06-week-speaker.qmd) | [{{< fa video   >}}](https://drive.google.com/file/d/1evOsN_LLl013yc015REAMRyQWfuSoeRb/view?usp=drive_link) |
 | 7 | 3/12/24 | No Speaker |  |
-| 8 | 3/19/24 | Gregory Hancock, University of Maryland |  |
-| 9 | 3/26/24 | Kou Murayama, University of Tubingen |  |
-| 10 | 4/2/24 | Jessica Kay Flake, McGill Univeristy |  |
-| 11 | 4/9/24 | Lisa DeBruine, University of Glasgow  |  |
+| 8 | 3/19/24 | [Gregory Hancock, University of Maryland](/speakers/08-week-speaker.qmd) | [{{< fa video   >}}](https://drive.google.com/file/d/1U6UyYZCJ0sW1muKQZ-VNn9EIBtGWH_uS/view?usp=drive_link) |
+| 9 | 3/26/24 | [Kou Murayama, University of Tubingen](/speakers/09-week-speaker.qmd) | No recording  |
+| 10 | 4/2/24 | Jessica Kay Flake, McGill Univeristy (Rescheduled fall 2024) |  |
+| 11 | 4/9/24 | [Lisa DeBruine, University of Glasgow](/speakers/11-week-speaker.qmd)  |  [{{< fa video   >}}](https://drive.google.com/file/d/11TaXL1eiyusyyZ-4NQNur1Ri-T1R1njo/view?usp=drive_link) |
 | 12 | 4/16/24 | No Speaker |  |
 | 13 | 4/23/24 | No Speaker |  |

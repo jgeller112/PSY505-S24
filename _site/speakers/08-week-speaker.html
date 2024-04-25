@@ -2,11 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.504">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-10-31">
+<meta name="dcterms.date" content="2024-03-19">
 <meta name="description" content="Use modern statistical and data scientific tools to measure causal effects and evaluate public policy">
 
 <title>Research Issues and Practices - Week 8</title>
@@ -64,6 +64,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -136,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 31, 2023</p>
+      <p class="date">March 19, 2024</p>
     </div>
   </div>
   
@@ -148,11 +149,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lesa-hoffman---professor-the-university-of-iowa" class="level1">
-<h1><strong>Lesa Hoffman - Professor, The University of Iowa</strong></h1>
-<section id="on-the-strategies-for-disaggregating-between-person-relations-across-individual-time-slopes-from-within-person-relations-in-longitudinal-data" class="level3">
-<h3 class="anchored" data-anchor-id="on-the-strategies-for-disaggregating-between-person-relations-across-individual-time-slopes-from-within-person-relations-in-longitudinal-data">On the Strategies for Disaggregating Between-Person Relations across Individual Time Slopes from Within-Person Relations in Longitudinal Data</h3>
-<p>A primary motivation for conducting longitudinal research is to examine relationships between variables at both the between-person and within-person levels of analysis simultaneously. Given the prominent role of time in the longitudinal designs, however, these two types of relations are likely to be insufficient in characterizing the full spectrum of ways that predictors and outcomes that are each measured repeatedly over time can relate to each other. In this talk I will focus on the deleterious impact of ignoring between-person relationships involving individual differences in change over time on the accuracy of within-person fixed effects. Because there is a large and fragmented literature describing different models for capturing between-person and within-person relations in longitudinal data in the first place, I will review these different approaches: univariate multilevel models (using person-mean-centered or detrended predictors), path analysis (to examine cross-lag or mediation relationships), structural equation models (for "latent" change), as well as strategies for latent centering of predictors: multivariate multilevel models, multilevel structural equation models, and "dynamic" structural equation models. I will also report the results of a simulation to demonstrate the problems that arise from ignoring between-person relationships involving time slopes: biased within-person fixed effects at the same occasion, as well as bias in other types of within-person fixed effects (e.g., their change over time; cross-lag associations). I will conclude with recommendations for best practice in longitudinal modeling.</p>
+<section id="gregory-hancock-professor-and-distinguished-scholar-teacher-university-of-maryland" class="level1">
+<h1><a href="https://education.umd.edu/directory/gregory-r-hancock">Gregory Hancock — Professor and Distinguished Scholar-Teacher, University of Maryland</a></h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://ih0.redbubble.net/image.1562095385.5877/raf,360x360,075,t,fafafa:ca443f4786.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<section id="power-analysis-has-lost-its-way-new-methods-to-bring-it-back-home" class="level2">
+<h2 class="anchored" data-anchor-id="power-analysis-has-lost-its-way-new-methods-to-bring-it-back-home">Power Analysis Has Lost Its Way: New Methods To Bring It Back Home</h2>
+<p>In a time when the alarms of research replicability are sounding louder than ever, the process of a priori power analysis has devolved from its intended origins as an honest, planful insurance policy for our scientific endeavors to a collection of near-delusional yard sale hagglings whose goal is slinking away as cheaply as possible. The current presentation discusses on-going work, with Yi Feng of UCLA, to derive new methods that attempt (1) to restore appropriate conservatism and robustness to the sample size planning process, and (2) to greatly simplify that process. Derivations and suggestions for practice will be presented using the framework of structural equation modeling.</p>
 
 
 </section>
@@ -238,6 +244,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -272,7 +296,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -287,27 +315,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
@@ -322,10 +329,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             break;
           }
         }
-        typesetMath(container);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
         return container.innerHTML
       } else {
-        typesetMath(note);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -334,8 +345,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      typesetMath(note);
-      return note.innerHTML;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
     }
   }
   for (var i=0; i<xrefs.length; i++) {
@@ -560,13 +578,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Content <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> 2023 by <a href="https://www.drjasongeller.com">Jason Geller</a> <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
+<p>Content <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> 2024 by <a href="https://www.drjasongeller.com">Jason Geller</a> <br> All content licensed under a <i class="fa-brands fa-creative-commons" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-by" aria-hidden="true"></i> <i class="fa-brands fa-creative-commons-nc" aria-hidden="true"></i> <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)</a></p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Made with <i class="fa-brands fa-r-project" aria-hidden="true"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://www.github.com/andrewheiss/evalf22.classes.andrewheiss.com">View the source at <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></p>
+<p>Made with <i class="fa-brands fa-r-project" aria-hidden="true"></i> and <a href="https://quarto.org/">Quarto</a><br> <a href="https://github.com/jgeller112/PSY505-S24">View the source at <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></p>
 </div>
   </div>
 </footer>
